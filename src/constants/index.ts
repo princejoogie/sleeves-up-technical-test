@@ -1,0 +1,17 @@
+export const carBrandList = [
+  "BMW",
+  "Mercedes-Benz",
+  "Audi",
+  "Tesla",
+  "Porsche",
+  "Lexus",
+  "Volvo",
+  "Lamborghini",
+  "Ferrari",
+  "Land Rover",
+  "Jaguar",
+  "Cadillac",
+  "Rolls-Royce",
+  "Maserati",
+  "Bugatti",
+];
