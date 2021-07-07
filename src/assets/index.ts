@@ -1,7 +1,8 @@
-export { default as porche1 } from "./porsche_1.png";
-export { default as porche2 } from "./porsche_2.png";
-export { default as porche3 } from "./porsche_3.png";
-export { default as porche4 } from "./porsche_4.png";
+export { default as porsche } from "./porsche.webp";
+export { default as telsa } from "./tesla.png";
+export { default as lambo } from "./lambo.png";
+export { default as bugatti } from "./bugatti.png";
+
 export { default as logoPorche } from "./logos/porsche.png";
 export { default as logoAudi } from "./logos/audi.png";
 export { default as logoBmw } from "./logos/bmw.png";

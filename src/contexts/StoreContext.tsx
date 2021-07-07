@@ -1,6 +1,6 @@
 import React, { createContext } from "react";
 import { useState } from "react";
-import { porche1, porche2, porche3, porche4 } from "../assets";
+import { porsche, telsa, lambo, bugatti } from "../assets";
 
 interface ContextProp {
   cars: CarItemProp[];
@@ -17,40 +17,40 @@ export const StoreContext = createContext<ContextProp>({
 export const StoreProvider: React.FC = ({ children }) => {
   const [cars, setCars] = useState<CarItemProp[]>([
     {
-      name: "Porche 550 Spyder",
-      imgSrc: porche1,
-      price: "$102,100",
+      name: "Porsche Taycan",
+      imgSrc: porsche,
+      price: "$79,900",
       id: "1",
       brand: "Porsche",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
+        "The soul has many aspects. It is variable and constantly changing. When viewing the Porsche Taycan, it reveals itself by a smile that expresses total delight. Or by the urge for freedom at the wheel of the new Taycan Cross Turismo that holds its ground, even away from everyday life.",
     },
     {
-      name: "Porche Panamera",
-      imgSrc: porche2,
-      price: "$102,100",
+      name: "Tesla Model 3",
+      imgSrc: telsa,
+      price: "$48,490",
       id: "2",
-      brand: "BMW",
+      brand: "Tesla",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
+        "Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph* in as little as 3.1 seconds.",
     },
     {
-      name: "Porsche 718",
-      imgSrc: porche3,
-      price: "$102,100",
+      name: "Lamborghini Aventador",
+      imgSrc: lambo,
+      price: "$393,695",
       id: "3",
-      brand: "Audi",
+      brand: "Lamborghini",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
+        "The Aventador Coupé has been engineered to revolutionize this concept and establish a new benchmark in the segment of super sports cars and beyond. This car aims to bring the future forward. This is a true supercar legend in the making, which combines the tradition of the Lamborghini brand with a level of innovation which takes the House of the Raging Bull to hitherto unexplored territory.",
     },
     {
-      name: "Porche 911",
-      imgSrc: porche4,
-      price: "$102,100",
+      name: "Bugatti Veyron",
+      imgSrc: bugatti,
+      price: "$1.9M",
       id: "4",
       brand: "Bugatti",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
+        'The Bugatti Veyron EB 16.4 is a mid-engine sports car, designed and developed in Germany by the Bugatti Engineering GmbH and manufactured by the Bugatti Automobiles SAS in Molsheim, France. The Veyron\'s fundamental concept is based on a technical draft of Bugatti chief engineer and "Technical Guru" Frank Götzke and it was named after the racing driver Pierre Veyron.',
     },
   ]);
 

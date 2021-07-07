@@ -52,7 +52,7 @@ const Dashboard: React.FC = () => {
 };
 
 const Item: React.FC<CarItemProp> = (props) => {
-  const { imgSrc, name, price, id } = props;
+  const { imgSrc, name, price, id, description } = props;
 
   return (
     <Link to={`/car/${id}`}>
@@ -71,9 +71,7 @@ const Item: React.FC<CarItemProp> = (props) => {
           </h4>
 
           <p className="mt-4 text-sm text-gray-500 line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
-            provident ipsum iste nemo consectetur labore maiores id quia
-            officiis aperiam?
+            {description}
           </p>
         </div>
       </div>
