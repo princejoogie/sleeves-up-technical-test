@@ -5,11 +5,13 @@ import { porche1, porche2, porche3, porche4 } from "../assets";
 interface ContextProp {
   cars: CarItemProp[];
   addCar: (props: CarItemProp) => void;
+  deleteCar: (id: string) => void;
 }
 
 export const StoreContext = createContext<ContextProp>({
   cars: [],
   addCar: () => {},
+  deleteCar: () => {},
 });
 
 export const StoreProvider: React.FC = ({ children }) => {
@@ -56,8 +58,12 @@ export const StoreProvider: React.FC = ({ children }) => {
     setCars((old) => [...old, props]);
   };
 
+  const deleteCar = (id: string) => {
+    setCars((old) => [...old.filter((e) => e.id !== id)]);
+  };
+
   return (
-    <StoreContext.Provider value={{ cars, addCar }}>
+    <StoreContext.Provider value={{ cars, addCar, deleteCar }}>
       {children}
     </StoreContext.Provider>
   );

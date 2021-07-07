@@ -66,7 +66,9 @@ const Item: React.FC<CarItemProp> = (props) => {
 
         <div>
           <h2 className="mt-4 font-bold text-gray-300 line-clamp-2">{name}</h2>
-          <h4 className="text-xl font-light text-blue-300">{price}</h4>
+          <h4 className="text-xl font-light text-blue-300 line-clamp-1">
+            {price}
+          </h4>
 
           <p className="mt-4 text-sm text-gray-500 line-clamp-3">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum

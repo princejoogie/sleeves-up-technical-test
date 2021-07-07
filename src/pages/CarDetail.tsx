@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container } from "../components";
-import { HiOutlineX } from "react-icons/hi";
+import { HiOutlineX, HiOutlineTrash } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useHistory, useParams } from "react-router-dom";
 import { logoPorche } from "../assets";
@@ -15,7 +15,7 @@ const listItem = {
 const CarDetail: React.FC = () => {
   const history = useHistory();
   const { id } = useParams<{ id: string }>();
-  const { cars } = useContext(StoreContext);
+  const { cars, deleteCar } = useContext(StoreContext);
   const [car, setCar] = useState<CarItemProp | null>(null);
 
   useEffect(() => {
@@ -75,9 +75,21 @@ const CarDetail: React.FC = () => {
             animate="animate"
             transition={{ delay: 0.3 }}
           >
-            <h3 className="text-2xl font-bold text-gray-600 uppercase">
-              Description
-            </h3>
+            <div className="flex items-center justify-between">
+              <h3 className="text-2xl font-bold text-gray-600 uppercase">
+                Description
+              </h3>
+
+              <button
+                onClick={() => {
+                  deleteCar(id);
+                  history.goBack();
+                }}
+              >
+                <HiOutlineTrash className="w-4 h-4 text-red-500" />
+              </button>
+            </div>
+
             <p className="mb-4 text-sm text-gray-300 md:text-base">
               {car?.description}
             </p>
