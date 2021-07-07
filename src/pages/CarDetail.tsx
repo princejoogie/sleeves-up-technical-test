@@ -3,9 +3,9 @@ import { Container } from "../components";
 import { HiOutlineX, HiOutlineTrash } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useHistory, useParams } from "react-router-dom";
-import { logoPorche } from "../assets";
 import { useContext } from "react";
 import { StoreContext } from "../contexts/StoreContext";
+import { getLogo } from "../assets/helpers";
 
 const listItem = {
   initial: { marginTop: 200, opacity: 0 },
@@ -38,10 +38,13 @@ const CarDetail: React.FC = () => {
       </motion.button>
 
       <div className="flex items-center justify-center mt-8">
-        <img
-          src={logoPorche}
-          alt={logoPorche}
-          className="object-contain w-32 h-32"
+        <motion.img
+          initial={{ marginTop: -200 }}
+          animate={{ marginTop: 0 }}
+          transition={{ duration: 0.3 }}
+          src={getLogo(car?.brand)}
+          alt={getLogo(car?.brand)}
+          className="object-contain h-32"
         />
       </div>
 

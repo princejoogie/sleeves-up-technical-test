@@ -30,7 +30,7 @@ export const StoreProvider: React.FC = ({ children }) => {
       imgSrc: porche2,
       price: "$102,100",
       id: "2",
-      brand: "Porsche",
+      brand: "BMW",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
     },
@@ -39,7 +39,7 @@ export const StoreProvider: React.FC = ({ children }) => {
       imgSrc: porche3,
       price: "$102,100",
       id: "3",
-      brand: "Porsche",
+      brand: "Audi",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
     },
@@ -48,7 +48,7 @@ export const StoreProvider: React.FC = ({ children }) => {
       imgSrc: porche4,
       price: "$102,100",
       id: "4",
-      brand: "Porsche",
+      brand: "Bugatti",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius obcaecati blanditiis in. Aliquam reiciendis dicta illo repudiandae, incidunt ducimus.",
     },

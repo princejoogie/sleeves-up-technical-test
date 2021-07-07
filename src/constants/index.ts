@@ -8,7 +8,6 @@ export const carBrandList = [
   "Volvo",
   "Lamborghini",
   "Ferrari",
-  "Land Rover",
   "Jaguar",
   "Cadillac",
   "Rolls-Royce",

@@ -18,7 +18,6 @@ type CarBrands =
   | "Volvo"
   | "Lamborghini"
   | "Ferrari"
-  | "Land Rover"
   | "Jaguar"
   | "Cadillac"
   | "Rolls-Royce"
