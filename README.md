@@ -12,8 +12,9 @@
 - [**Firebase**](https://firebase.google.com/) - Hosting & Serving the app
 
 ## Description & Usage
+> I do not specialize in design and usually work in par with a UI/UX Designer when creating web and mobile applications. This was a challenge in terms of design as I was programming and thinking of how the app would look like at the same time which took most of my 2 hours working on this. It was a fun challenge overall.
 
-> I've added 4 sample cars by default. It is best that the `image url` provided when adding a car is _transparent_ to fit the theme. Choosing a brand automtically maps the corresponsing logo. I was planning to add a rich text editor to support `markdown` for the `others` input but have already passed the 2hr mark.
+> I've added 4 sample cars by default. It is best that the `image url` provided when adding a car is _transparent_ to fit the theme. Choosing a brand automtically maps the corresponsing logo. I was planning to add a rich text editor to support `markdown` for the `others` input but have already passed the 2hr mark. Also, some minor features I could easily implement are filters on the dashboard.
 
 ## Sample Images
 
