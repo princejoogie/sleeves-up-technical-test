@@ -7,6 +7,7 @@
 
 - [**React**](https://reactjs.org/) - Front-end (Typescript)
 - [**Vite**](https://vitejs.dev/) - Bundler/Build tool (uses native ES Module imports)
+- [**TailwindCSS**](https://tailwindcss.com/) - CSS utility Framework
 - [**Context**](https://reactjs.org/docs/context.html) - State Management
 - [**Firebase**](https://firebase.google.com/) - Hosting & Serving the app
 
