@@ -3,6 +3,10 @@
 - As stated in the [Expectations](https://github.com/SleevesUpAU/CodingTests/tree/master/Cars%20App#expectations), I have limit myself to 2 hrs to create this web application.
 - Live preview [here](https://fast-exotic-cars.web.app/)
 
+## Demo
+
+https://github.com/princejoogie/sleeves-up-technical-test/assets/47204120/5e05364f-b4a7-40f6-9c8d-82b8526fe7a0
+
 ## Technologies Used
 
 - [**React**](https://reactjs.org/) - Front-end (Typescript)
